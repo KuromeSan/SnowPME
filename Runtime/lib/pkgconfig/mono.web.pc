@@ -1,0 +1,4 @@
+Name: Mono.Web
+Description: Mono ASP.NET extension classes
+Version: 2.0.0.0
+Libs: -r:/home/ogiso/work/svndir/mono_sources/2.10.1/mono_install/lib/mono/gac/Mono.Web/2.0.0.0__0738eb9f132ed756/Mono.Web.dll

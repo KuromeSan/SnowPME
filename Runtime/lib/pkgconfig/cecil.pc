@@ -1,0 +1,7 @@
+assemblies_dir=/home/ogiso/work/svndir/mono_sources/2.10.1/mono_install/lib/mono
+Libraries=${assemblies_dir}/gac/Mono.Cecil/0.9.4.0__0738eb9f132ed756/Mono.Cecil.dll
+
+Name: Mono Internal -- Do not use.
+Description: Mono Internal Libraries -- Do not use 
+Version: 2.11
+Libs: -r:Mono.Cecil.dll

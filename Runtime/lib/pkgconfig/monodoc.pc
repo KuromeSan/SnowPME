@@ -1,0 +1,9 @@
+prefix=/home/ogiso/work/svndir/mono_sources/2.10.1/mono_install
+exec_prefix=${prefix}
+libdir=/home/ogiso/work/svndir/mono_sources/2.10.1/mono_install/lib
+sourcesdir=${libdir}/monodoc/sources
+
+Name: Monodoc
+Description: Monodoc - Mono Documentation Tools
+Version: 2.11
+Libs: /r:${prefix}/lib/mono/monodoc/monodoc.dll 
