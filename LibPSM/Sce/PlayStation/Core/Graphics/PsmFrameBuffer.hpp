@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string>
 #include <iostream>
+#include "TextureCubeFace.hpp"
 using namespace std;
 
 namespace Sce::PlayStation::Core::Graphics {
