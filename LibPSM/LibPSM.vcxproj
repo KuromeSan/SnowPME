@@ -50,6 +50,8 @@
     <ClInclude Include="Sce\PlayStation\Core\Environment\TextInputDialog.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Environment\TextInputMode.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Error.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\TextureFilter.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\TextureWrap.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\BlendFunc.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\BlendFuncFactor.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\BlendFuncMode.hpp" />

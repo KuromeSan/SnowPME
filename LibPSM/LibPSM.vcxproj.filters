@@ -342,6 +342,12 @@
     <ClInclude Include="Sce\PlayStation\Core\Matrix4.hpp">
       <Filter>Header Files\Sce\PlayStation\Core</Filter>
     </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\TextureFilter.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\TextureWrap.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sce\PlayStation\Core\Error.cpp">
