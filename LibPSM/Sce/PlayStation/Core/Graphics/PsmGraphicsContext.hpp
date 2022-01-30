@@ -7,9 +7,12 @@
 
 #include "DrawMode.hpp"
 #include "PixelFormat.hpp"
-#include "GraphicsUpdate .hpp"
+#include "GraphicsUpdate.hpp"
 #include "ClearMask.hpp"
 #include "TextureCubeFace.hpp"
+#include "GraphicsState.hpp"
+#include "Primitive.hpp"
+#include "GraphicsCapsState.hpp"
 
 using namespace std;
 

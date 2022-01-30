@@ -64,13 +64,14 @@
     <ClInclude Include="Sce\PlayStation\Core\Graphics\GraphicsCaps.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\GraphicsCapsState.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\GraphicsExtension.hpp" />
-    <ClInclude Include="Sce\PlayStation\Core\Graphics\GraphicsState.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\GraphicsUpdate.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\InternalOption.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\MultiSampleMode.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\PixelBufferOption.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\PixelBufferType .hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\PixelFormat.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\PolygonOffset.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\Primitive.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\PsmFrameBuffer.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\PsmGraphicsContext.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\PsmPixelBuffer.hpp" />
@@ -79,6 +80,7 @@
     <ClInclude Include="Sce\PlayStation\Core\Graphics\PsmVertexBuffer.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\ShaderAttributeType.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\ShaderUniformType.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\StencilFunc.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\StencilFuncMode.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\StencilOpMode.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\TextureCubeFace.hpp" />
@@ -91,6 +93,7 @@
     <ClInclude Include="Sce\PlayStation\Core\Imaging\FontMetrics.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Imaging\FontStyle.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Imaging\Image.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Imaging\ImageRect.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Input\GamePad.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Input\Motion.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Input\Touch.hpp" />
@@ -99,6 +102,10 @@
     <ClInclude Include="Sce\PlayStation\Core\Services\Network.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Services\NetworkRequest.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Audio\SoundStatus.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\StencilOp.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Vector2.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Vector3.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Vector4.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sce\PlayStation\Core\Audio\Bgm.cpp" />

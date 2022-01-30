@@ -312,7 +312,28 @@
     <ClInclude Include="Sce\PlayStation\Core\Graphics\GraphicsCaps.hpp">
       <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="Sce\PlayStation\Core\Graphics\GraphicsState.hpp">
+    <ClInclude Include="Sce\PlayStation\Core\Vector4.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Vector2.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Vector3.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\StencilOp.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\StencilFunc.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\PolygonOffset.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Imaging\ImageRect.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Imaging</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\Primitive.hpp">
       <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
     </ClInclude>
   </ItemGroup>
