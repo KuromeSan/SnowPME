@@ -4,17 +4,33 @@
 #include <stdlib.h>
 #include <string>
 #include <iostream>
+#include "CommonDialogType.hpp"
+#include "CommonDialogResult.hpp"
+#include "CommonDialogState.hpp"
+#include "TextInputMode.hpp"
 using namespace std;
 
 namespace Sce::PlayStation::Core::Environment {
+	typedef struct Arguments
+	{
+		TextInputMode mode;
+		string text;
+	} Arguments;
+
+	typedef struct Results
+	{
+		string text;
+	} Results;
+
 	class TextInputDialog {
 	public:
-		static int NewNative(Sce::PlayStation::Core::Environment::CommonDialogType, int *);
-		static int ReleaseNative(Sce::PlayStation::Core::Environment::CommonDialogType, int);
-		static int OpenNative(Sce::PlayStation::Core::Environment::CommonDialogType, int, Sce::PlayStation::Core::Environment::TextInputDialog/Arguments *);
-		static int AbortNative(Sce::PlayStation::Core::Environment::CommonDialogType, int);
-		static int GetState(Sce::PlayStation::Core::Environment::CommonDialogType, int, Sce::PlayStation::Core::Environment::CommonDialogState *);
-		static int GetResult(Sce::PlayStation::Core::Environment::CommonDialogType, int, Sce::PlayStation::Core::Environment::CommonDialogResult *, Sce::PlayStation::Core::Environment::TextInputDialog/Results *);
+
+		static int NewNative(CommonDialogType type, int *handle);
+		static int ReleaseNative(CommonDialogType type, int handle);
+		static int OpenNative(CommonDialogType type, int handle, Arguments *arguments);
+		static int AbortNative(CommonDialogType type, int handle);
+		static int GetState(CommonDialogType type, int handle, CommonDialogState *state);
+		static int GetResult(CommonDialogType type, int handle, CommonDialogResult *result, Results *results);
 	};
 }
 #endif
