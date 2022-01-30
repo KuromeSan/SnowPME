@@ -17,14 +17,14 @@ using namespace Sce::PlayStation::Core;
 
 namespace Sce::PlayStation::Core::Graphics {
 	typedef struct GraphicsState {
-		EnableMode Enable;
+		EnableMode Enable; /* EnableMode */
 		ImageRect Scissor;
 		ImageRect Viewport;
 		Vector2 DepthRange;
 		Vector4 ClearColor;
 		float ClearDepth;
 		int ClearStencil;
-		sCullFace CullFace;
+		CullFace CullFace;
 		BlendFunc BlendFuncRgb;
 		BlendFunc BlendFuncAlpha;
 		DepthFunc DepthFunc;

@@ -15,16 +15,16 @@ using namespace std;
 namespace Sce::PlayStation::Core::Imaging {
 	class Font {
 	public:
-		static int NewFromFilenameSizeStyle(string, int, FontStyle, int *);
-		static int NewFromAliasSizeStyle(FontAlias, int, FontStyle, int *);
-		static int AddRefNative(int);
-		static int ReleaseNative(int);
-		static int GetName(int, string *);
-		static int GetSize(int, int *);
-		static int GetStyle(int, FontStyle *);
-		static int GetMetrics(int, FontMetrics *);
-		static int GetTextWidthNative(int, string, int, int, int *);
-		static int GetTextMetricsNative(int, string, int, int, CharMetrics*);
+		static int NewFromFilenameSizeStyle(string filename, int size, FontStyle style, int *handle);
+		static int NewFromAliasSizeStyle(FontAlias alias, int size, FontStyle style, int *handle);
+		static int AddRefNative(int handle);
+		static int ReleaseNative(int handle);
+		static int GetName(int handle, string *name);
+		static int GetSize(int handle, int *size);
+		static int GetStyle(int handle, FontStyle *style);
+		static int GetMetrics(int handle, FontMetrics *fontMetrics);
+		static int GetTextWidthNative(int handle, string text, int offset, int len, int *width);
+		static int GetTextMetricsNative(int handle, string text, int offset, int len, CharMetrics *charMetrics);
 	};
 }
 #endif

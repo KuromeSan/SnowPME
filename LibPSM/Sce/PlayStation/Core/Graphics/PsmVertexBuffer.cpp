@@ -22,7 +22,7 @@ namespace Sce::PlayStation::Core::Graphics {
 		return 0;
 	}
 	int PsmVertexBuffer::SetIndices(int handle, uint16_t* indices, int to, int from, int count){
-		cout << "Sce::PlayStation::Core::Graphics::SetIndices(int, uint32_t16*, int, int, int) Unimplemented." << endl;
+		cout << "Sce::PlayStation::Core::Graphics::SetIndices(int, uint16_t*, int, int, int) Unimplemented." << endl;
 		return 0;
 	}
 }
