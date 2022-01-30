@@ -9,11 +9,11 @@ using namespace std;
 namespace Sce::PlayStation::Core::Graphics {
 	class PsmFrameBuffer {
 	public:
-		static int Create(int *);
-		static int Delete(int);
-		static int AddRef(int);
-		static int SetColorTarget(int, int, int, Sce::PlayStation::Core::Graphics::TextureCubeFace, int *);
-		static int SetDepthTarget(int, int, int, Sce::PlayStation::Core::Graphics::TextureCubeFace, int *);
+		static int Create(int *result);
+		static int Delete(int handle);
+		static int AddRef(int handle);
+		static int SetColorTarget(int handle, int colorBuffer, int level, TextureCubeFace cubeFace, int *result);
+		static int SetDepthTarget(int handle, int depthBuffer, int level, TextureCubeFace cubeFace, int *result);
 	};
 }
 #endif
