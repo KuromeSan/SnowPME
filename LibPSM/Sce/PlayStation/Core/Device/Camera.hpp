@@ -18,24 +18,24 @@ namespace Sce::PlayStation::Core::Device {
 	class Camera {
 	public:
 		static int GetNumberOfCamerasNative();
-		static int GetCameraFacingNative(int, CameraFacing *);
-		static int GetSupportedPreviewSizeCountNative(int);
-		static int GetSupportedPreviewSizeNative(int, int, CameraSize *);
-		static int GetSupportedPictureSizeCountNative(int);
-		static int GetSupportedPictureSizeNative(int, int, CameraSize *);
-		static int NewFromIndex(int, int *);
-		static int ReleaseNative(int);
-		static int GetCameraStateNative(int, CameraState *);
-		static int HasTakenPictureNative(int, PictureState *);
-		static int OpenNative(int, CameraSize);
-		static int CloseNative(int);
-		static int GetPreviewSizeNative(int, CameraSize *);
-		static int GetPreviewImageFormatNative(int, CameraImageFormat *);
-		static int StartNative(int);
-		static int StopNative(int);
-		static int ReadNative(int, byte*, int, long *);
-		static int TakePictureNative(int, CameraSize);
-		static int GetPictureFilenameNative(int, string *);
+		static int GetCameraFacingNative(int cameraId, CameraFacing *info);
+		static int GetSupportedPreviewSizeCountNative(int cameraId);
+		static int GetSupportedPreviewSizeNative(int cameraId, int sizeId, CameraSize *size);
+		static int GetSupportedPictureSizeCountNative(int cameraId);
+		static int GetSupportedPictureSizeNative(int cameraId, int sizeId, CameraSize *size);
+		static int NewFromIndex(int cameraId, int *handle);
+		static int ReleaseNative(int handle);
+		static int GetCameraStateNative(int handle, CameraState *state);
+		static int HasTakenPictureNative(int handle, PictureState *taken);
+		static int OpenNative(int handle, CameraSize size);
+		static int CloseNative(int handle);
+		static int GetPreviewSizeNative(int handle, CameraSize *size);
+		static int GetPreviewImageFormatNative(int handle, CameraImageFormat *format);
+		static int StartNative(int handle);
+		static int StopNative(int handle);
+		static int ReadNative(int handle, byte* frameBuffer, int bufferSize, long *frameCount);
+		static int TakePictureNative(int handle, CameraSize size);
+		static int GetPictureFilenameNative(int handle, string *filename);
 	};
 }
 #endif

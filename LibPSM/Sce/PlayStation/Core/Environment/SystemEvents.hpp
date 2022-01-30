@@ -7,9 +7,16 @@
 using namespace std;
 
 namespace Sce::PlayStation::Core::Environment {
+	typedef struct InternalData
+	{
+		bool QuitRequired;
+		bool Restored;
+		bool Minimized;
+	} InternalData;
+
 	class SystemEvents {
 	public:
-		static int CheckEventsNative(Sce::PlayStation::Core::Environment::SystemEvents/InternalData *);
+		static int CheckEventsNative(InternalData *data);
 	};
 }
 #endif

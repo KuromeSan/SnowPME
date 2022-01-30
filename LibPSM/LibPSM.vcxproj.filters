@@ -70,6 +70,9 @@
     <Filter Include="Header Files\Sce\PlayStation\Core\Audio">
       <UniqueIdentifier>{4a9d4057-c4b9-4e49-b190-1d17fdee0ddd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Sce\PlayStation\Core\Environment">
+      <UniqueIdentifier>{1ff95c45-5b87-4b15-befa-a6bd11c6ee13}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sce\PlayStation\Core\Error.hpp">
@@ -248,6 +251,39 @@
     </ClInclude>
     <ClInclude Include="Sce\PlayStation\Core\Graphics\VertexFormat.hpp">
       <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Environment\Log.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Environment\NetworkInformation.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Environment\PersistentMemory.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Environment\Shell.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Environment\SystemEvents.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Environment\SystemMemory.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Environment\SystemParameters.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Environment\TextInputDialog.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Environment\Clipboard.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Environment\CommonDialogResult.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Environment\CommonDialogState.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Environment</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

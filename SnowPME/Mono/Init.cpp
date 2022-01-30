@@ -1,6 +1,6 @@
 #include "Init.hpp"
 #include "Security.hpp"
-//#include "../LibPSM.hpp"
+#include "../LibPSM.hpp"
 #include "../Config.hpp"
 namespace SnowPME::Mono
 {
@@ -33,8 +33,7 @@ namespace SnowPME::Mono
 	}
 
 	void Init::addFunctions() {
-		return;
-/*			mono_add_internal_call("GetExceptionInfoNative(string&,string&)", Sce::PlayStation::Core::Error::GetExceptionInfoNative);
+		mono_add_internal_call("GetExceptionInfoNative(string&,string&)", Sce::PlayStation::Core::Error::GetExceptionInfoNative);
 		mono_add_internal_call("WriteNative(string)", Sce::PlayStation::Core::Environment::Log::WriteNative);
 		mono_add_internal_call("GetNeedsRedirection()", Sce::PlayStation::Core::Environment::Log::GetNeedsRedirection);
 		mono_add_internal_call("CheckEventsNative(Sce.PlayStation.Core.Environment.SystemEvents/InternalData&)", Sce::PlayStation::Core::Environment::SystemEvents::CheckEventsNative);
@@ -254,7 +253,7 @@ namespace SnowPME::Mono
 		mono_add_internal_call("GetAuthTicketDataNative(string&)", Sce::PlayStation::Core::Services::Network::GetAuthTicketDataNative);
 		mono_add_internal_call("ResetAuthTicketNative()", Sce::PlayStation::Core::Services::Network::ResetAuthTicketNative);
 		mono_add_internal_call("SetAppIdNative(string))", Sce::PlayStation::Core::Services::Network::SetAppIdNative);
-*/
+
 	}
 		
 

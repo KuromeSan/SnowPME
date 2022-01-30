@@ -4,8 +4,11 @@
 #include <stdlib.h>
 #include <string>
 #include <iostream>
-using namespace std;
+#include "../Environment/CommonDialogState.hpp"
+#include "../Environment/CommonDialogResult.hpp"
 
+using namespace std;
+using namespace Sce::PlayStation::Core::Environment;
 
 namespace Sce::PlayStation::Core::Device {
 	
@@ -18,12 +21,12 @@ namespace Sce::PlayStation::Core::Device {
 
 	class CameraImportDialog {
 	public:
-		static int NewNative(int, int*);
-		static int ReleaseNative(int, int);
-		static int OpenNative(int, int, DialogArguments *);
-		static int AbortNative(int, int);
-		static int GetState(int, int, Sce::PlayStation::Core::Environment::CommonDialogState *);
-		static int GetResult(int, int, Sce::PlayStation::Core::Environment::CommonDialogResult *, Sce::PlayStation::Core::Device::CameraImportDialog/DialogResults *);
+		static int NewNative(int type, int *handle);
+		static int ReleaseNative(int type, int handle);
+		static int OpenNative(int type, int handle, DialogArguments *dialogArguments);
+		static int AbortNative(int type, int handle);
+		static int GetState(int type, int handle, CommonDialogState *commonDialogState);
+		static int GetResult(int type, int handle, CommonDialogResult *commonDialogResult, DialogResults *dialogResults);
 	};
 }
 #endif

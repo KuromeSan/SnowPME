@@ -7,9 +7,25 @@
 using namespace std;
 
 namespace Sce::PlayStation::Core::Environment {
+
+	enum ActionType : unsigned int
+	{
+		None = 0,
+		Browser = 1
+	};
+
+	typedef struct Action
+	{
+		ActionType type;
+		string parameter0;
+		string parameter1;
+		string parameter2;
+		string parameter3;
+	} Action;
+
 	class Shell {
 	public:
-		static int ExecuteNative(Sce::PlayStation::Core::Environment::Shell/Action *);
+		static int ExecuteNative(Action *data);
 	};
 }
 #endif
