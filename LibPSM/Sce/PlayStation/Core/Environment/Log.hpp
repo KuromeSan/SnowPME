@@ -9,7 +9,7 @@ using namespace std;
 namespace Sce::PlayStation::Core::Environment {
 	class Log {
 	public:
-		static int WriteNative(string);
+		static int WriteNative(string text);
 		static int GetNeedsRedirection();
 	};
 }

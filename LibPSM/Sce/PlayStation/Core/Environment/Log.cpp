@@ -1,7 +1,7 @@
 #include "Log.hpp"
 
 namespace Sce::PlayStation::Core::Environment {
-	int Log::WriteNative(string){
+	int Log::WriteNative(string text){
 		cout << "Sce::PlayStation::Core::Environment::WriteNative(string) Unimplemented." << endl;
 		return 0;
 	}
