@@ -9,7 +9,7 @@ using namespace std;
 namespace Sce::PlayStation::Core::Environment {
 	class SystemMemory {
 	public:
-		static int GetMemoryUsage(bool);
+		static int GetMemoryUsage(bool details);
 	};
 }
 #endif

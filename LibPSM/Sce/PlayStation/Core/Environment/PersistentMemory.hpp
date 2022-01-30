@@ -9,8 +9,8 @@ using namespace std;
 namespace Sce::PlayStation::Core::Environment {
 	class PersistentMemory {
 	public:
-		static int WriteNative(byte*);
-		static int ReadNative(byte*);
+		static int WriteNative(byte* fileImage);
+		static int ReadNative(byte* fileImage);
 	};
 }
 #endif
