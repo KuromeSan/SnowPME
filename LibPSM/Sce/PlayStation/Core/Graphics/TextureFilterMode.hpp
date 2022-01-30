@@ -2,10 +2,10 @@
 #define LIB_PSM_TEXTUREFILTERMODE_H 1
 #include <string>
 namespace Sce::PlayStation::Core::Graphics {
-	enum TextureFilterMode : uint8_t {
-		TextureFilterMode_Nearest = 0,
-		TextureFilterMode_Linear = 1,
-		TextureFilterMode_Disabled = 2
+	enum class TextureFilterMode : uint8_t {
+		Nearest = 0,
+		Linear = 1,
+		Disabled = 2
 	};
 }
 

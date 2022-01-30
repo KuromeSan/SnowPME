@@ -2,16 +2,16 @@
 #define LIB_PSM_ENABLEMODE_H
 
 namespace Sce::PlayStation::Core::Graphics {
-	enum EnableMode : unsigned int {
-		EnableMode_None = 0,
-		EnableMode_ScissorTest = 1,
-		EnableMode_CullFace = 2,
-		EnableMode_Blend = 4,
-		EnableMode_DepthTest = 8,
-		EnableMode_PolygonOffsetFill = 16,
-		EnableMode_StencilTest = 32,
-		EnableMode_Dither = 64,
-		EnableMode_All = 127
+	enum class EnableMode : unsigned int {
+		None = 0,
+		ScissorTest = 1,
+		CullFace = 2,
+		Blend = 4,
+		DepthTest = 8,
+		PolygonOffsetFill = 16,
+		StencilTest = 32,
+		Dither = 64,
+		All = 127
 	};
 }
 

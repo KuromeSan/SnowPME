@@ -2,28 +2,28 @@
 #define LIB_PSM_PIXELFORMAT_H 1
 
 namespace Sce::PlayStation::Core::Graphics {
-	enum PixelFormat : unsigned int {
-		PixelFormat_None = 0,
-		PixelFormat_Rgba = 1,
-		PixelFormat_RgbaH = 2,
-		PixelFormat_Rgba4444 = 3,
-		PixelFormat_Rgba5551 = 4,
-		PixelFormat_Rgb565 = 5,
-		PixelFormat_LuminanceAlpha = 6,
-		PixelFormat_LuminanceAlphaH = 7,
-		PixelFormat_Luminance = 8,
-		PixelFormat_LuminanceH = 9,
-		PixelFormat_Alpha = 10,
-		PixelFormat_AlphaH = 11,
-		PixelFormat_Depth16 = 12,
-		PixelFormat_Depth24 = 13,
-		PixelFormat_Depth16Stencil8 = 14,
-		PixelFormat_Depth24Stencil8 = 15,
-		PixelFormat_Dxt1 = 16,
-		PixelFormat_Dxt2 = 17,
-		PixelFormat_Dxt3 = 18,
-		PixelFormat_Dxt4 = 19,
-		PixelFormat_Dxt5 = 20
+	enum class PixelFormat : unsigned int {
+		None = 0,
+		Rgba = 1,
+		RgbaH = 2,
+		Rgba4444 = 3,
+		Rgba5551 = 4,
+		Rgb565 = 5,
+		LuminanceAlpha = 6,
+		LuminanceAlphaH = 7,
+		Luminance = 8,
+		LuminanceH = 9,
+		Alpha = 10,
+		AlphaH = 11,
+		Depth16 = 12,
+		Depth24 = 13,
+		Depth16Stencil8 = 14,
+		Depth24Stencil8 = 15,
+		Dxt1 = 16,
+		Dxt2 = 17,
+		Dxt3 = 18,
+		Dxt4 = 19,
+		Dxt5 = 20
 	};
 }
 

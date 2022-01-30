@@ -3,18 +3,18 @@
 #include <string>
 
 namespace Sce::PlayStation::Core::Graphics {
-	enum BlendFuncFactor : uint8_t {
-		BlendFuncFactor_Zero = 0,
-		BlendFuncFactor_One = 1,
-		BlendFuncFactor_SrcColor = 2,
-		BlendFuncFactor_OneMinusSrcColor = 3,
-		BlendFuncFactor_SrcAlpha = 4,
-		BlendFuncFactor_OneMinusSrcAlpha = 5,
-		BlendFuncFactor_DstColor = 6,
-		BlendFuncFactor_OneMinusDstColor = 7,
-		BlendFuncFactor_DstAlpha = 8,
-		BlendFuncFactor_OneMinusDstAlpha = 9,
-		BlendFuncFactor_SrcAlphaSaturate = 10
+	enum class BlendFuncFactor : uint8_t {
+		Zero = 0,
+		One = 1,
+		SrcColor = 2,
+		OneMinusSrcColor = 3,
+		SrcAlpha = 4,
+		OneMinusSrcAlpha = 5,
+		DstColor = 6,
+		OneMinusDstColor = 7,
+		DstAlpha = 8,
+		OneMinusDstAlpha = 9,
+		SrcAlphaSaturate = 10
 	};
 }
 

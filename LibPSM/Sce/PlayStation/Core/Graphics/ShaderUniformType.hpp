@@ -2,25 +2,25 @@
 #define LIB_PSM_SHADERUNIFORMTYPE_H 1
 
 namespace Sce::PlayStation::Core::Graphics {
-	enum ShaderUniformType : unsigned int {
-		ShaderUniformType_None = 0,
-		ShaderUniformType_Float = 0x100,
-		ShaderUniformType_Float2 = 257,
-		ShaderUniformType_Float3 = 258,
-		ShaderUniformType_Float4 = 259,
-		ShaderUniformType_Float2x2 = 273,
-		ShaderUniformType_Float3x3 = 290,
-		ShaderUniformType_Float4x4 = 307,
-		ShaderUniformType_Int = 0x400,
-		ShaderUniformType_Int2 = 1025,
-		ShaderUniformType_Int3 = 1026,
-		ShaderUniformType_Int4 = 1027,
-		ShaderUniformType_Bool = 768,
-		ShaderUniformType_Bool2 = 769,
-		ShaderUniformType_Bool3 = 770,
-		ShaderUniformType_Bool4 = 771,
-		ShaderUniformType_Sampler2D = 32769,
-		ShaderUniformType_SamplerCube = 32770
+	enum class ShaderUniformType : unsigned int {
+		None = 0,
+		Float = 0x100,
+		Float2 = 257,
+		Float3 = 258,
+		Float4 = 259,
+		Float2x2 = 273,
+		Float3x3 = 290,
+		Float4x4 = 307,
+		Int = 0x400,
+		Int2 = 1025,
+		Int3 = 1026,
+		Int4 = 1027,
+		Bool = 768,
+		Bool2 = 769,
+		Bool3 = 770,
+		Bool4 = 771,
+		Sampler2D = 32769,
+		SamplerCube = 32770
 	};
 }
 

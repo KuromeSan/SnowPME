@@ -2,16 +2,16 @@
 #define LIB_PSM_STENCILFUNCMODE_H 1
 #include <string>
 namespace Sce::PlayStation::Core::Graphics {
-	enum StencilFuncMode : uint8_t {
-		StencilFuncMode_Always = 0,
-		StencilFuncMode_Never = 1,
-		StencilFuncMode_Equal = 2,
-		StencilFuncMode_NotEqual = 3,
-		StencilFuncMode_Less = 4,
-		StencilFuncMode_Greater = 5,
-		StencilFuncMode_LEqual = 6,
-		StencilFuncMode_GEqual = 7,
-		StencilFuncMode_NotEequal = 3
+	enum class StencilFuncMode : uint8_t {
+		Always = 0,
+		Never = 1,
+		Equal = 2,
+		NotEqual = 3,
+		Less = 4,
+		Greater = 5,
+		LEqual = 6,
+		GEqual = 7,
+		NotEequal = 3
 	};
 }
 

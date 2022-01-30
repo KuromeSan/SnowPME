@@ -2,12 +2,12 @@
 #define LIB_PSM_SHADERATTRIBUTETYPE_H 1
 
 namespace Sce::PlayStation::Core::Graphics {
-	enum ShaderAttributeType : unsigned int {
-		ShaderAttributeType_None = 0,
-		ShaderAttributeType_Float = 0x100,
-		ShaderAttributeType_Float2 = 257,
-		ShaderAttributeType_Float3 = 258,
-		ShaderAttributeType_Float4 = 259
+	enum class ShaderAttributeType : unsigned int {
+		None = 0,
+		Float = 0x100,
+		Float2 = 257,
+		Float3 = 258,
+		Float4 = 259
 	};
 }
 
