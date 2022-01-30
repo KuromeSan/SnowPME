@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Sce\PlayStation\Core\Device\LocationData.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Device\LocationDeviceType.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Environment\CommonDialogState.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Audio\BgmStatus.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Audio\Bgm.hpp" />

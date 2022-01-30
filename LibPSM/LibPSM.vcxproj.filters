@@ -285,6 +285,12 @@
     <ClInclude Include="Sce\PlayStation\Core\Environment\CommonDialogState.hpp">
       <Filter>Header Files\Sce\PlayStation\Core\Environment</Filter>
     </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Device\LocationData.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Device\LocationDeviceType.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Device</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sce\PlayStation\Core\Error.cpp">
