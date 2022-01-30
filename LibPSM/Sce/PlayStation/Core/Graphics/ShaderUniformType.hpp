@@ -3,24 +3,24 @@
 
 namespace Sce::PlayStation::Core::Graphics {
 	enum ShaderUniformType : unsigned int {
-		None,
-		Float = 256,
-		Float2,
-		Float3,
-		Float4,
-		Float2x2 = 273,
-		Float3x3 = 290,
-		Float4x4 = 307,
-		Int = 1024,
-		Int2,
-		Int3,
-		Int4,
-		Bool = 768,
-		Bool2,
-		Bool3,
-		Bool4,
-		Sampler2D = 32769,
-		SamplerCube
+		ShaderUniformType_None = 0,
+		ShaderUniformType_Float = 0x100,
+		ShaderUniformType_Float2 = 257,
+		ShaderUniformType_Float3 = 258,
+		ShaderUniformType_Float4 = 259,
+		ShaderUniformType_Float2x2 = 273,
+		ShaderUniformType_Float3x3 = 290,
+		ShaderUniformType_Float4x4 = 307,
+		ShaderUniformType_Int = 0x400,
+		ShaderUniformType_Int2 = 1025,
+		ShaderUniformType_Int3 = 1026,
+		ShaderUniformType_Int4 = 1027,
+		ShaderUniformType_Bool = 768,
+		ShaderUniformType_Bool2 = 769,
+		ShaderUniformType_Bool3 = 770,
+		ShaderUniformType_Bool4 = 771,
+		ShaderUniformType_Sampler2D = 32769,
+		ShaderUniformType_SamplerCube = 32770
 	};
 }
 

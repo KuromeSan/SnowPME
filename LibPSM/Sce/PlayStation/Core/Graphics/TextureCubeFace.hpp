@@ -3,12 +3,12 @@
 #include <string>
 namespace Sce::PlayStation::Core::Graphics {
 	enum TextureCubeFace : uint8_t {
-		PositiveX = 0,
-		NegativeX = 1,
-		PositiveY = 2,
-		NegativeY = 3,
-		PositiveZ = 4,
-		NegativeZ = 5
+		TextureCubeFace_PositiveX = 0,
+		TextureCubeFace_NegativeX = 1,
+		TextureCubeFace_PositiveY = 2,
+		TextureCubeFace_NegativeY = 3,
+		TextureCubeFace_PositiveZ = 4,
+		TextureCubeFace_NegativeZ = 5
 	};
 }
 

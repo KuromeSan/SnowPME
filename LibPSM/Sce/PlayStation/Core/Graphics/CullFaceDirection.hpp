@@ -4,8 +4,8 @@
 
 namespace Sce::PlayStation::Core::Graphics {
 	enum CullFaceDirection : uint8_t {
-		Cw = 0,
-		Ccw = 1
+		CullFaceDirection_Cw = 0,
+		CullFaceDirection_Ccw = 1
 	};
 }
 

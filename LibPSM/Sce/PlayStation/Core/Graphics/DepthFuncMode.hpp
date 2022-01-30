@@ -4,15 +4,15 @@
 
 namespace Sce::PlayStation::Core::Graphics {
 	enum DepthFuncMode : uint8_t {
-		Always = 1,
-		Never = 2,
-		Equal = 3,
-		NotEqual = 4,
-		Less = 5,
-		Greater = 6,
-		LEqual = 7,
-		GEqual = 8,
-		NotEequal = 3
+		DepthFuncMode_Always = 0,
+		DepthFuncMode_Never = 1,
+		DepthFuncMode_Equal = 2,
+		DepthFuncMode_NotEqual = 3,
+		DepthFuncMode_Less = 4,
+		DepthFuncMode_Greater = 5,
+		DepthFuncMode_LEqual = 6,
+		DepthFuncMode_GEqual = 7,
+		DepthFuncMode_NotEequal = 3
 	};
 }
 

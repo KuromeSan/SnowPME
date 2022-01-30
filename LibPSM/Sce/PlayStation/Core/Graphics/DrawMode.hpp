@@ -3,12 +3,12 @@
 
 namespace Sce::PlayStation::Core::Graphics {
 	enum DrawMode : unsigned short {
-		Points = 0,
-		Lines = 1,
-		LineStrip = 2,
-		Triangles = 3,
-		TriangleStrip = 4,
-		TriangleFan = 5
+		DrawMode_Points = 0,
+		DrawMode_Lines = 1,
+		DrawMode_LineStrip = 2,
+		DrawMode_Triangles = 3,
+		DrawMode_TriangleStrip = 4,
+		DrawMode_TriangleFan = 5
 	};
 }
 

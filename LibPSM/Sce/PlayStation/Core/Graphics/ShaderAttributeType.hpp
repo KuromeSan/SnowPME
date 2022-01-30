@@ -3,11 +3,11 @@
 
 namespace Sce::PlayStation::Core::Graphics {
 	enum ShaderAttributeType : unsigned int {
-		None,
-		Float = 256U,
-		Float2,
-		Float3,
-		Float4
+		ShaderAttributeType_None = 0,
+		ShaderAttributeType_Float = 0x100,
+		ShaderAttributeType_Float2 = 257,
+		ShaderAttributeType_Float3 = 258,
+		ShaderAttributeType_Float4 = 259
 	};
 }
 

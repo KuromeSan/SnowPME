@@ -4,13 +4,13 @@
 
 namespace Sce::PlayStation::Core::Graphics {
 	enum ColorMask : uint8_t {
-		None = 0,
-		R = 1,
-		G = 2,
-		B = 4,
-		A = 8,
-		Rgb = 7,
-		Rgba = 15
+		ColorMask_None = 0,
+		ColorMask_R = 1,
+		ColorMask_G = 2,
+		ColorMask_B = 4,
+		ColorMask_A = 8,
+		ColorMask_Rgb = 7,
+		ColorMask_Rgba = 15
 	};
 }
 

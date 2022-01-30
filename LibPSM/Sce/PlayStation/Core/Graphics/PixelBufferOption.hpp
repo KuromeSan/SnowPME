@@ -3,8 +3,8 @@
 
 namespace Sce::PlayStation::Core::Graphics {
 	enum PixelBufferOption : unsigned int {
-		None = 0,
-		Renderable = 1
+		PixelBufferOption_None = 0,
+		PixelBufferOption_Renderable = 1
 	};
 }
 

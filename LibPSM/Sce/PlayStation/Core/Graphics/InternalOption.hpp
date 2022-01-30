@@ -3,8 +3,8 @@
 
 namespace Sce::PlayStation::Core::Graphics {
 	enum InternalOption : unsigned int {
-		None = 0,
-		SystemResource = 1
+		InternalOption_None = 0,
+		InternalOption_SystemResource = 1
 	};
 }
 

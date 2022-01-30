@@ -3,8 +3,8 @@
 #include <string>
 namespace Sce::PlayStation::Core::Graphics {
 	enum TextureWrapMode : uint8_t {
-		ClampToEdge = 0,
-		Repeat = 1
+		TextureWrapMode_ClampToEdge = 0,
+		TextureWrapMode_Repeat = 1
 	};
 }
 

@@ -3,11 +3,11 @@
 
 namespace Sce::PlayStation::Core::Graphics {
 	enum PixelBufferType : unsigned int {
-		None = 0,
-		Texture2D = 1,
-		TextureCube = 2,
-		ColorBuffer = 3,
-		DepthBuffer = 4
+		PixelBufferType_None = 0,
+		PixelBufferType_Texture2D = 1,
+		PixelBufferType_TextureCube = 2,
+		PixelBufferType_ColorBuffer = 3,
+		PixelBufferType_DepthBuffer = 4
 	};
 }
 

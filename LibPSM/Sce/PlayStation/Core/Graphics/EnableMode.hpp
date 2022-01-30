@@ -3,15 +3,15 @@
 
 namespace Sce::PlayStation::Core::Graphics {
 	enum EnableMode : unsigned int {
-		eNone = 0,
-		eScissorTest = 1,
-		eCullFace = 2,
-		eBlend = 4,
-		eDepthTest = 8,
-		ePolygonOffsetFill = 16,
-		eStencilTest = 32,
-		eDither = 64,
-		eAll = 127
+		EnableMode_None = 0,
+		EnableMode_ScissorTest = 1,
+		EnableMode_CullFace = 2,
+		EnableMode_Blend = 4,
+		EnableMode_DepthTest = 8,
+		EnableMode_PolygonOffsetFill = 16,
+		EnableMode_StencilTest = 32,
+		EnableMode_Dither = 64,
+		EnableMode_All = 127
 	};
 }
 

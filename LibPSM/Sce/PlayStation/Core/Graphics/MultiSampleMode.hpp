@@ -3,9 +3,9 @@
 
 namespace Sce::PlayStation::Core::Graphics {
 	enum MultiSampleMode : unsigned int {
-		None = 0,
-		Msaa2x = 1,
-		Msaa4x = 2
+		MultiSampleMode_None = 0,
+		MultiSampleMode_Msaa2x = 1,
+		MultiSampleMode_Msaa4x = 2
 	};
 }
 

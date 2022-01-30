@@ -4,11 +4,11 @@
 
 namespace Sce::PlayStation::Core::Graphics {
 	enum ClearMask : unsigned int {
-		None = 0,
-		Color = 1,
-		Depth = 2,
-		Stencil = 4,
-		All = 7
+		ClearMask_None = 0,
+		ClearMask_Color = 1,
+		ClearMask_Depth = 2,
+		ClearMask_Stencil = 4,
+		ClearMask_All = 7
 	};
 }
 

@@ -4,9 +4,9 @@
 
 namespace Sce::PlayStation::Core::Graphics {
 	enum BlendFuncMode : uint8_t {
-		Add = 0,
-		Subtract = 1,
-		ReverseSubtract = 2
+		BlendFuncMode_Add = 0,
+		BlendFuncMode_Subtract = 1,
+		BlendFuncMode_ReverseSubtract = 2
 	};
 }
 
