@@ -101,6 +101,8 @@
     <ClInclude Include="Sce\PlayStation\Core\Imaging\ImageRect.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Imaging\ImageSize.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Input\GamePad.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Input\GamePadButtons.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Input\GamePadData.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Input\Motion.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Input\Touch.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Matrix4.hpp" />

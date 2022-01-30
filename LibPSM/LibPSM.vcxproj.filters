@@ -357,6 +357,12 @@
     <ClInclude Include="Sce\PlayStation\Core\Imaging\ImageMode.hpp">
       <Filter>Header Files\Sce\PlayStation\Core\Imaging</Filter>
     </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Input\GamePadData.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Input\GamePadButtons.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Input</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sce\PlayStation\Core\Error.cpp">
