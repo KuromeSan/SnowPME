@@ -4,12 +4,13 @@
 #include <stdlib.h>
 #include <string>
 #include <iostream>
+#include "MotionData.hpp"
 using namespace std;
 
 namespace Sce::PlayStation::Core::Input {
 	class Motion {
 	public:
-		static int GetDataNative(int, Sce::PlayStation::Core::Input::MotionData *);
+		static int GetDataNative(int deviceIndex, MotionData *gamePadData);
 	};
 }
 #endif

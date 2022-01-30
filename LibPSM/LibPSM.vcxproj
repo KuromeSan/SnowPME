@@ -104,7 +104,10 @@
     <ClInclude Include="Sce\PlayStation\Core\Input\GamePadButtons.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Input\GamePadData.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Input\Motion.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Input\MotionData.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Input\Touch.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Input\TouchData.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Input\TouchStatus.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Matrix4.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Services\AccountInformation.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Services\InAppPurchaseDialog.hpp" />

@@ -9,8 +9,8 @@ using namespace std;
 namespace Sce::PlayStation::Core::Input {
 	class Touch {
 	public:
-		static int GetDataNative(int, Sce::PlayStation::Core::Input::TouchData*, int, int *);
-		static int GetRearTouchDataNative(int, Sce::PlayStation::Core::Input::TouchData*, int, int *);
+		static int GetDataNative(int deviceIndex, TouchData* touchData, int numElements, int *numFinger);
+		static int GetRearTouchDataNative(int deviceIndex, TouchData* touchData, int numElements, int *numFinger);
 	};
 }
 #endif
