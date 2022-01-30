@@ -4,6 +4,13 @@
 #include "DepthFunc.hpp"
 #include "BlendFunc.hpp"
 #include "ColorMask.hpp"
+#include "CullFace.hpp"
+#include "StencilOp.hpp"
+#include "StencilFunc.hpp"
+#include "PolygonOffset.hpp"
+#include "../Vector4.hpp"
+#include "../Vector2.hpp"
+using namespace Sce::PlayStation::Core;
 
 namespace Sce::PlayStation::Core::Graphics {
 	typedef struct GraphicsState {
