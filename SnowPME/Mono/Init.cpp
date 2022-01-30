@@ -4,14 +4,16 @@
 #include "../Config.hpp"
 namespace SnowPME::Mono
 {
+	string Init::executableFile = "";
+
 	/*
 	*	This function initalizes mono with a given executable path
 	*/
 	int Init::InitMono(string executablePath) {
 		MonoDomain* domain;
-		cout << "C# Assembly Loading [ " << executablePath << " ]";
+		cout << "C# Assembly Loading [ " << executablePath << " ]" << endl;
 
-		Init::executableFile = executablePath;
+		executableFile = executablePath;
 
 		// Lockdown mono if security is enabled
 		if (!Config::SecurityCritical) {
@@ -28,7 +30,19 @@ namespace SnowPME::Mono
 		// Create a domain in which this application will run under.
 		domain = mono_jit_init_version(executablePath.c_str(), "mobile");
 
+		// Add all PSM Exclusive functions.
 		Init::addFunctions();
+
+		// Read Sce.PlayStation.Core.dll
+		MonoAssembly* mAssembly = mono_domain_assembly_open(domain, Config::PsmCorelibsPath.c_str());
+		
+		// Call SetToConsole
+		MonoImage* mImage = mono_assembly_get_image(mAssembly);
+		MonoClass* mClass = mono_class_from_name(mImage, "Sce.PlayStation.Core.Environment", "Log");
+		MonoMethod* mMethod = mono_class_get_method_from_name(mClass, "SetToConsole", 0);
+		mono_runtime_invoke(mMethod, NULL, NULL, NULL);
+
+
 		return 0;
 	}
 
