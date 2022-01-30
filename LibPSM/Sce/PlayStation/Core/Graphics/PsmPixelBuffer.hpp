@@ -4,15 +4,20 @@
 #include <stdlib.h>
 #include <string>
 #include <iostream>
+#include "PixelBufferType.hpp"
+#include "PixelFormat.hpp"
+#include "PixelBufferOption.hpp"
+#include "InternalOption.hpp"
+
 using namespace std;
 
 namespace Sce::PlayStation::Core::Graphics {
 	class PsmPixelBuffer {
 	public:
-		static int Create(Sce::PlayStation::Core::Graphics::PixelBufferType, int, int, bool, Sce::PlayStation::Core::Graphics::PixelFormat, Sce::PlayStation::Core::Graphics::PixelBufferOption, Sce::PlayStation::Core::Graphics::InternalOption, int *);
-		static int Delete(int);
-		static int AddRef(int);
-		static int GetInfo(int, Sce::PlayStation::Core::Graphics::PixelBufferType *, int *, int *, int *, Sce::PlayStation::Core::Graphics::PixelFormat *, Sce::PlayStation::Core::Graphics::PixelBufferOption *);
+		static int Create(PixelBufferType type, int width, int height, bool mipmap, PixelFormat format, PixelBufferOption option, InternalOption option2, int *result);
+		static int Delete(int handle);
+		static int AddRef(int handle);
+		static int GetInfo(int handle, PixelBufferType *type, int *width, int *height, int *level, PixelFormat *format, PixelBufferOption *option);
 	};
 }
 #endif

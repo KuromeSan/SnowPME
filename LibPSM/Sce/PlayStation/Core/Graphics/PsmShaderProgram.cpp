@@ -73,51 +73,51 @@ namespace Sce::PlayStation::Core::Graphics {
 		cout << "Sce::PlayStation::Core::Graphics::GetAttributeSize(int, int, int *) Unimplemented." << endl;
 		return 0;
 	}
-	int PsmShaderProgram::SetUniformValue(int, int, int, Sce::PlayStation::Core::Matrix4 *, Sce::PlayStation::Core::Graphics::ShaderUniformType){
+	int PsmShaderProgram::SetUniformValueMatrix4(int, int, int, Sce::PlayStation::Core::Matrix4 *, Sce::PlayStation::Core::Graphics::ShaderUniformType){
 		cout << "Sce::PlayStation::Core::Graphics::SetUniformValue(int, int, int, Sce::PlayStation::Core::Matrix4 *, Sce::PlayStation::Core::Graphics::ShaderUniformType) Unimplemented." << endl;
 		return 0;
 	}
-	int PsmShaderProgram::SetUniformValue(int, int, int, Sce::PlayStation::Core::Vector4 *, Sce::PlayStation::Core::Graphics::ShaderUniformType){
+	int PsmShaderProgram::SetUniformValueVector4(int, int, int, Sce::PlayStation::Core::Vector4 *, Sce::PlayStation::Core::Graphics::ShaderUniformType){
 		cout << "Sce::PlayStation::Core::Graphics::SetUniformValue(int, int, int, Sce::PlayStation::Core::Vector4 *, Sce::PlayStation::Core::Graphics::ShaderUniformType) Unimplemented." << endl;
 		return 0;
 	}
-	int PsmShaderProgram::SetUniformValue(int, int, int, Sce::PlayStation::Core::Vector3 *, Sce::PlayStation::Core::Graphics::ShaderUniformType){
+	int PsmShaderProgram::SetUniformValueVector3(int, int, int, Sce::PlayStation::Core::Vector3 *, Sce::PlayStation::Core::Graphics::ShaderUniformType){
 		cout << "Sce::PlayStation::Core::Graphics::SetUniformValue(int, int, int, Sce::PlayStation::Core::Vector3 *, Sce::PlayStation::Core::Graphics::ShaderUniformType) Unimplemented." << endl;
 		return 0;
 	}
-	int PsmShaderProgram::SetUniformValue(int, int, int, Sce::PlayStation::Core::Vector2 *, Sce::PlayStation::Core::Graphics::ShaderUniformType){
+	int PsmShaderProgram::SetUniformValueVector2(int, int, int, Sce::PlayStation::Core::Vector2 *, Sce::PlayStation::Core::Graphics::ShaderUniformType){
 		cout << "Sce::PlayStation::Core::Graphics::SetUniformValue(int, int, int, Sce::PlayStation::Core::Vector2 *, Sce::PlayStation::Core::Graphics::ShaderUniformType) Unimplemented." << endl;
 		return 0;
 	}
-	int PsmShaderProgram::SetUniformValue(int, int, int, float *, Sce::PlayStation::Core::Graphics::ShaderUniformType){
+	int PsmShaderProgram::SetUniformValueFloat(int, int, int, float *, Sce::PlayStation::Core::Graphics::ShaderUniformType){
 		cout << "Sce::PlayStation::Core::Graphics::SetUniformValue(int, int, int, float *, Sce::PlayStation::Core::Graphics::ShaderUniformType) Unimplemented." << endl;
 		return 0;
 	}
-	int PsmShaderProgram::SetUniformValue(int, int, int, int *, Sce::PlayStation::Core::Graphics::ShaderUniformType){
+	int PsmShaderProgram::SetUniformValueInt(int, int, int, int *, Sce::PlayStation::Core::Graphics::ShaderUniformType){
 		cout << "Sce::PlayStation::Core::Graphics::SetUniformValue(int, int, int, int *, Sce::PlayStation::Core::Graphics::ShaderUniformType) Unimplemented." << endl;
 		return 0;
 	}
-	int PsmShaderProgram::SetUniformValue2(int, int, Sce::PlayStation::Core::Matrix4*, Sce::PlayStation::Core::Graphics::ShaderUniformType, int, int, int){
+	int PsmShaderProgram::SetUniformValue2Matrix4(int, int, Sce::PlayStation::Core::Matrix4*, Sce::PlayStation::Core::Graphics::ShaderUniformType, int, int, int){
 		cout << "Sce::PlayStation::Core::Graphics::SetUniformValue2(int, int, Sce::PlayStation::Core::Matrix4*, Sce::PlayStation::Core::Graphics::ShaderUniformType, int, int, int) Unimplemented." << endl;
 		return 0;
 	}
-	int PsmShaderProgram::SetUniformValue2(int, int, Sce::PlayStation::Core::Vector4*, Sce::PlayStation::Core::Graphics::ShaderUniformType, int, int, int){
+	int PsmShaderProgram::SetUniformValue2Vector4(int, int, Sce::PlayStation::Core::Vector4*, Sce::PlayStation::Core::Graphics::ShaderUniformType, int, int, int){
 		cout << "Sce::PlayStation::Core::Graphics::SetUniformValue2(int, int, Sce::PlayStation::Core::Vector4*, Sce::PlayStation::Core::Graphics::ShaderUniformType, int, int, int) Unimplemented." << endl;
 		return 0;
 	}
-	int PsmShaderProgram::SetUniformValue2(int, int, Sce::PlayStation::Core::Vector3*, Sce::PlayStation::Core::Graphics::ShaderUniformType, int, int, int){
+	int PsmShaderProgram::SetUniformValue2Vector3(int, int, Sce::PlayStation::Core::Vector3*, Sce::PlayStation::Core::Graphics::ShaderUniformType, int, int, int){
 		cout << "Sce::PlayStation::Core::Graphics::SetUniformValue2(int, int, Sce::PlayStation::Core::Vector3*, Sce::PlayStation::Core::Graphics::ShaderUniformType, int, int, int) Unimplemented." << endl;
 		return 0;
 	}
-	int PsmShaderProgram::SetUniformValue2(int, int, Sce::PlayStation::Core::Vector2*, Sce::PlayStation::Core::Graphics::ShaderUniformType, int, int, int){
+	int PsmShaderProgram::SetUniformValue2Vector2(int, int, Sce::PlayStation::Core::Vector2*, Sce::PlayStation::Core::Graphics::ShaderUniformType, int, int, int){
 		cout << "Sce::PlayStation::Core::Graphics::SetUniformValue2(int, int, Sce::PlayStation::Core::Vector2*, Sce::PlayStation::Core::Graphics::ShaderUniformType, int, int, int) Unimplemented." << endl;
 		return 0;
 	}
-	int PsmShaderProgram::SetUniformValue2(int, int, float*, Sce::PlayStation::Core::Graphics::ShaderUniformType, int, int, int){
+	int PsmShaderProgram::SetUniformValue2Float(int, int, float*, Sce::PlayStation::Core::Graphics::ShaderUniformType, int, int, int){
 		cout << "Sce::PlayStation::Core::Graphics::SetUniformValue2(int, int, float*, Sce::PlayStation::Core::Graphics::ShaderUniformType, int, int, int) Unimplemented." << endl;
 		return 0;
 	}
-	int PsmShaderProgram::SetUniformValue2(int, int, int*, Sce::PlayStation::Core::Graphics::ShaderUniformType, int, int, int){
+	int PsmShaderProgram::SetUniformValue2Int(int, int, int*, Sce::PlayStation::Core::Graphics::ShaderUniformType, int, int, int){
 		cout << "Sce::PlayStation::Core::Graphics::SetUniformValue2(int, int, int*, Sce::PlayStation::Core::Graphics::ShaderUniformType, int, int, int) Unimplemented." << endl;
 		return 0;
 	}
