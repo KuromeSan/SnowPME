@@ -4,29 +4,35 @@
 #include <stdlib.h>
 #include <string>
 #include <iostream>
+#include "ImageSize.hpp"
+#include "ImageColor.hpp"
+#include "ImageRect.hpp"
+#include "ImagePosition.hpp"
+#include "ImageMode.hpp"
+
 using namespace std;
 
 namespace Sce::PlayStation::Core::Imaging {
 	class Image {
 	public:
-		static int NewFromFilename(string, int *);
-		static int NewFromFileImage(byte*, int *);
-		static int NewFromModeSizeColor(Sce::PlayStation::Core::Imaging::ImageMode, Sce::PlayStation::Core::Imaging::ImageSize *, Sce::PlayStation::Core::Imaging::ImageColor *, int *);
-		static int NewFromModeSizeBuffer(Sce::PlayStation::Core::Imaging::ImageMode, Sce::PlayStation::Core::Imaging::ImageSize *, byte*, int *);
-		static int AddRefNative(int);
-		static int ReleaseNative(int);
-		static int GetSize(int, Sce::PlayStation::Core::Imaging::ImageSize *);
-		static int SetDecodeSize(int, Sce::PlayStation::Core::Imaging::ImageSize *);
-		static int DecodeNative(int);
-		static int GetPixelData(int, byte*, uint32_t);
-		static int GetPixelDataSize(int, uint32_t *);
-		static int ResizeNative(int, Sce::PlayStation::Core::Imaging::ImageSize *, int *);
-		static int CropNative(int, Sce::PlayStation::Core::Imaging::ImageRect *, int *);
-		static int DrawImageNative(int, int, Sce::PlayStation::Core::Imaging::ImagePosition *);
-		static int DrawRectangleNative(int, Sce::PlayStation::Core::Imaging::ImageColor *, Sce::PlayStation::Core::Imaging::ImageRect *);
-		static int DrawTextNative(int, string, int, int, Sce::PlayStation::Core::Imaging::ImageColor *, int, Sce::PlayStation::Core::Imaging::ImagePosition *);
-		static int ExportNative(int, string, string);
-		static int SaveAsNative(int, string);
+		static int NewFromFilename(string filename, int *handle);
+		static int NewFromFileImage(byte *fileImage, int * handle);
+		static int NewFromModeSizeColor(ImageMode mode, ImageSize *size, ImageColor *color, int *handle);
+		static int NewFromModeSizeBuffer(ImageMode mode, ImageSize *size, byte *buffer, int *handle);
+		static int AddRefNative(int handle);
+		static int ReleaseNative(int handle);
+		static int GetSize(int handle, ImageSize *size);
+		static int SetDecodeSize(int handle, ImageSize *size);
+		static int DecodeNative(int handle);
+		static int GetPixelData(int handle, byte *buffer, uint32_t bufferSize);
+		static int GetPixelDataSize(int handle, uint32_t *bufferSize);
+		static int ResizeNative(int handle, ImageSize *size, int *resizedImageHandle);
+		static int CropNative(int handle, ImageRect *rect, int *croppedImageHandle);
+		static int DrawImageNative(int handle, int source_handle, ImagePosition *position);
+		static int DrawRectangleNative(int handle, ImageColor *color, ImageRect *rect);
+		static int DrawTextNative(int handle, string text, int offset, int len, ImageColor *color, int font_handle, ImagePosition *position);
+		static int ExportNative(int handle, string albumname, string filename);
+		static int SaveAsNative(int handle, string filename);
 	};
 }
 #endif

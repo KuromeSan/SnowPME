@@ -95,6 +95,9 @@
     <ClInclude Include="Sce\PlayStation\Core\Imaging\FontMetrics.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Imaging\FontStyle.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Imaging\Image.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Imaging\ImageColor.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Imaging\ImageMode.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Imaging\ImagePosition.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Imaging\ImageRect.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Imaging\ImageSize.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Input\GamePad.hpp" />

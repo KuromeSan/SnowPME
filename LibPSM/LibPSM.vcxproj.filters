@@ -348,6 +348,15 @@
     <ClInclude Include="Sce\PlayStation\Core\Graphics\TextureWrap.hpp">
       <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
     </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Imaging\ImageColor.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Imaging</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Imaging\ImagePosition.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Imaging</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Imaging\ImageMode.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Imaging</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sce\PlayStation\Core\Error.cpp">
