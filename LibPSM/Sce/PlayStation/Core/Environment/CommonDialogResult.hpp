@@ -1,5 +1,5 @@
-#ifndef LIB_PSM_COMMONDIALOGSTATE_H
-#define LIB_PSM_COMMONDIALOGSTATE_H
+#ifndef LIB_PSM_COMMONDIALOGRESULT_H
+#define LIB_PSM_COMMONDIALOGRESULT_H 1
 
 namespace Sce::PlayStation::Core::Environment {
 	enum CommonDialogResult : unsigned int {
