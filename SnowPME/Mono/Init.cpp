@@ -252,7 +252,7 @@ namespace SnowPME::Mono
 		mono_add_internal_call("SetAuthServer(bool)", Sce::PlayStation::Core::Services::Network::SetAuthServer);
 		mono_add_internal_call("GetAuthTicketDataNative(string&)", Sce::PlayStation::Core::Services::Network::GetAuthTicketDataNative);
 		mono_add_internal_call("ResetAuthTicketNative()", Sce::PlayStation::Core::Services::Network::ResetAuthTicketNative);
-		mono_add_internal_call("SetAppIdNative(string))", Sce::PlayStation::Core::Services::Network::SetAppIdNative);
+		mono_add_internal_call("SetAppIdNative(string)", Sce::PlayStation::Core::Services::Network::SetAppIdNative);
 
 	}
 		

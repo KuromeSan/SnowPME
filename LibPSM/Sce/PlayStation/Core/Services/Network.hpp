@@ -9,14 +9,14 @@ using namespace std;
 namespace Sce::PlayStation::Core::Services {
 	class Network {
 	public:
-		static int CheckStateNative(uint32_t *);
-		static int GetOnlineIdNative(string *);
-		static int GetAccountIdNative(unsigned long *);
-		static int SetWebRequestDelegate(intptr);
-		static int SetAuthServer(bool);
-		static int GetAuthTicketDataNative(string *);
+		static int CheckStateNative(uint32_t * state);
+		static int GetOnlineIdNative(string *id);
+		static int GetAccountIdNative(unsigned long * id);
+		static int SetWebRequestDelegate(uintptr_t handle);
+		static int SetAuthServer(bool useAuth);
+		static int GetAuthTicketDataNative(string *data);
 		static int ResetAuthTicketNative();
-		static int SetAppIdNative(string));
+		static int SetAppIdNative(string appId);
 	};
 }
 #endif
