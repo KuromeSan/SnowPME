@@ -372,6 +372,12 @@
     <ClInclude Include="Sce\PlayStation\Core\Input\TouchStatus.hpp">
       <Filter>Header Files\Sce\PlayStation\Core\Input</Filter>
     </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Services\InAppPurchaseCommand.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Services\InAppPurchaseProductData.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Services</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sce\PlayStation\Core\Error.cpp">

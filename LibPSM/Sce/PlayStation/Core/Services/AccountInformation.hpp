@@ -9,7 +9,7 @@ using namespace std;
 namespace Sce::PlayStation::Core::Services {
 	class AccountInformation {
 	public:
-		static int GetUniqueID(byte*);
+		static int GetUniqueID(byte* id);
 	};
 }
 #endif

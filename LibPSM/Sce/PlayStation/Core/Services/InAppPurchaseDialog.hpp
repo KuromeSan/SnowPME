@@ -4,17 +4,36 @@
 #include <stdlib.h>
 #include <string>
 #include <iostream>
+#include "InAppPurchaseCommand.hpp"
+#include "InAppPurchaseProductData.hpp"
+#include "../Environment/CommonDialogState.hpp"
+#include "../Environment/CommonDialogResult.hpp"
+using namespace Sce::PlayStation::Core::Environment;
 using namespace std;
 
 namespace Sce::PlayStation::Core::Services {
+	typedef struct CommandArguments
+	{
+		InAppPurchaseCommand Command;
+		int* Arguments;
+	} CommandArguments;
+
+	typedef struct CommandResults
+	{
+		InAppPurchaseCommand Command;
+		int InfoStatus;
+		int Count;
+		InAppPurchaseProductData* Results;
+	} CommandResults;
+
 	class InAppPurchaseDialog {
 	public:
-		static int NewNative(int, int *);
-		static int ReleaseNative(int, int);
-		static int OpenNative(int, int, Sce::PlayStation::Core::Services::InAppPurchaseDialog/CommandArguments *);
-		static int AbortNative(int, int);
-		static int GetState(int, int, Sce::PlayStation::Core::Environment::CommonDialogState *);
-		static int GetResult(int, int, Sce::PlayStation::Core::Environment::CommonDialogResult *, Sce::PlayStation::Core::Services::InAppPurchaseDialog/CommandResults *);
+		static int NewNative(int type, int *handle);
+		static int ReleaseNative(int type, int handle);
+		static int OpenNative(int type, int handle, CommandArguments *cmdArg);
+		static int AbortNative(int type, int handle);
+		static int GetState(int type, int handle, CommonDialogState *state);
+		static int GetResult(int type, int handle, CommonDialogResult *result, CommandResults *results);
 	};
 }
 #endif

@@ -110,7 +110,9 @@
     <ClInclude Include="Sce\PlayStation\Core\Input\TouchStatus.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Matrix4.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Services\AccountInformation.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Services\InAppPurchaseCommand.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Services\InAppPurchaseDialog.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Services\InAppPurchaseProductData.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Services\Network.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Services\NetworkRequest.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Audio\SoundStatus.hpp" />
