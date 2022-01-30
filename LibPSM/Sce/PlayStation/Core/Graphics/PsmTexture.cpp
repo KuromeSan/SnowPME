@@ -21,7 +21,7 @@ namespace Sce::PlayStation::Core::Graphics {
 		cout << "Sce::PlayStation::Core::Graphics::SetMaxAnisotropy(int, float) Unimplemented." << endl;
 		return 0;
 	}
-	int PsmTexture::SetPixels(int handle, int level, TextureCubeFace cubeFace, byte* pixels, PixelFormat format, int offset, int pitch, int dx, int dy, int dw, int dh) {
+	int PsmTexture::SetPixels(int handle, int level, TextureCubeFace cubeFace, int* pixels, PixelFormat format, int offset, int pitch, int dx, int dy, int dw, int dh) {
 		cout << "Sce::PlayStation::Core::Graphics::SetPixels(int, int, Sce::PlayStation::Core::Graphics::TextureCubeFace, System::Array, Sce::PlayStation::Core::Graphics::PixelFormat, int, int, int, int, int, int) Unimplemented." << endl;
 		return 0;
 	}

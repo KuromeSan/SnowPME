@@ -19,7 +19,7 @@ namespace Sce::PlayStation::Core::Graphics {
 		static int SetFilter(int handle, TextureFilter *filter);
 		static int SetWrap(int handle, TextureWrap *filter);
 		static int SetMaxAnisotropy(int handle, float anisotropy);
-		static int SetPixels(int handle, int level, TextureCubeFace cubeFace, byte *pixels, PixelFormat format, int offset, int pitch, int dx, int dy, int dw, int dh);
+		static int SetPixels(int handle, int level, TextureCubeFace cubeFace, int *pixels, PixelFormat format, int offset, int pitch, int dx, int dy, int dw, int dh);
 		static int GenerateMipmap(int handle);
 	};
 }
