@@ -204,7 +204,7 @@
     <ClInclude Include="Sce\PlayStation\Core\Graphics\DrawMode.hpp">
       <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="Sce\PlayStation\Core\Graphics\EnableMode .hpp">
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\EnableMode.hpp">
       <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="Sce\PlayStation\Core\Graphics\GraphicsExtension.hpp">
@@ -309,9 +309,6 @@
     <ClInclude Include="Sce\PlayStation\Core\Graphics\GraphicsCapsState.hpp">
       <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="Sce\PlayStation\Core\Graphics\GraphicsCaps.hpp">
-      <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
-    </ClInclude>
     <ClInclude Include="Sce\PlayStation\Core\Vector4.hpp">
       <Filter>Header Files\Sce\PlayStation\Core</Filter>
     </ClInclude>
@@ -335,6 +332,12 @@
     </ClInclude>
     <ClInclude Include="Sce\PlayStation\Core\Graphics\Primitive.hpp">
       <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\GraphicsState.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Imaging\ImageSize.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Imaging</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
