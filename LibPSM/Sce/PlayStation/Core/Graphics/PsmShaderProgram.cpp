@@ -1,11 +1,11 @@
 #include "PsmShaderProgram.hpp"
 
 namespace Sce::PlayStation::Core::Graphics {
-	int PsmShaderProgram::FromFile(string, string, string*, int*, int *){
+	int PsmShaderProgram::FromFile(string vpFileName, string fpFileName, string* constKeys, int* constVals, int *result){
 		cout << "Sce::PlayStation::Core::Graphics::FromFile(string, string, string*, int*, int *) Unimplemented." << endl;
 		return 0;
 	}
-	int PsmShaderProgram::FromImage(byte*, byte*, string*, int*, int *){
+	int PsmShaderProgram::FromImage(byte* vpFileName, byte* fpFileImage, string* constKeys, int* constVals, int *result){
 		cout << "Sce::PlayStation::Core::Graphics::FromImage(byte*, byte*, string*, int*, int *) Unimplemented." << endl;
 		return 0;
 	}
