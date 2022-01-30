@@ -68,7 +68,7 @@
     <ClInclude Include="Sce\PlayStation\Core\Graphics\InternalOption.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\MultiSampleMode.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\PixelBufferOption.hpp" />
-    <ClInclude Include="Sce\PlayStation\Core\Graphics\PixelBufferType .hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\PixelBufferType.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\PixelFormat.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\PolygonOffset.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Graphics\Primitive.hpp" />
@@ -98,6 +98,7 @@
     <ClInclude Include="Sce\PlayStation\Core\Input\GamePad.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Input\Motion.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Input\Touch.hpp" />
+    <ClInclude Include="Sce\PlayStation\Core\Matrix4.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Services\AccountInformation.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Services\InAppPurchaseDialog.hpp" />
     <ClInclude Include="Sce\PlayStation\Core\Services\Network.hpp" />

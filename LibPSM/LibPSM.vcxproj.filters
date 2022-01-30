@@ -222,7 +222,7 @@
     <ClInclude Include="Sce\PlayStation\Core\Graphics\PixelBufferOption.hpp">
       <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="Sce\PlayStation\Core\Graphics\PixelBufferType .hpp">
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\PixelBufferType.hpp">
       <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="Sce\PlayStation\Core\Graphics\PixelFormat.hpp">
@@ -338,6 +338,9 @@
     </ClInclude>
     <ClInclude Include="Sce\PlayStation\Core\Imaging\ImageSize.hpp">
       <Filter>Header Files\Sce\PlayStation\Core\Imaging</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Matrix4.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

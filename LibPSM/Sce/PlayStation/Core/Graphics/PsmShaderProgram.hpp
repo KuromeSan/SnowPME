@@ -45,8 +45,8 @@ namespace Sce::PlayStation::Core::Graphics {
 		static int SetUniformValue2Vector4(int, int, Vector4*, ShaderUniformType, int, int, int);
 		static int SetUniformValue2Vector3(int, int, Vector3*, ShaderUniformType, int, int, int);
 		static int SetUniformValue2Vector2(int, int, Vector2*, ShaderUniformType, int, int, int);
-		static int SetUniformValue2Float(int, int, float*, Sce::PlayStation::Core::Graphics::ShaderUniformType, int, int, int);
-		static int SetUniformValue2Int(int, int, int*, Sce::PlayStation::Core::Graphics::ShaderUniformType, int, int, int);
+		static int SetUniformValue2Float(int, int, float*, ShaderUniformType, int, int, int);
+		static int SetUniformValue2Int(int, int, int*, ShaderUniformType, int, int, int);
 		static int SetAttributeValue2(int, int, float*);
 		static int GetUniformTexture(int, int, int *);
 		static int GetAttributeStream(int, int, int *);
