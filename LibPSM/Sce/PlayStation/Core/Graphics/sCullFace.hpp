@@ -3,9 +3,9 @@
 #include <string>
 
 namespace Sce::PlayStation::Core::Graphics {
-	typedef struct CullFace {
+	typedef struct sCullFace {
 		unsigned int bits;
-	} CullFace;
+	} sCullFace;
 }
 
 #endif

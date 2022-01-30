@@ -4,12 +4,15 @@
 #include "DepthFunc.hpp"
 #include "BlendFunc.hpp"
 #include "ColorMask.hpp"
-#include "CullFace.hpp"
+#include "sCullFace.hpp"
 #include "StencilOp.hpp"
 #include "StencilFunc.hpp"
 #include "PolygonOffset.hpp"
+#include "EnableMode .hpp"
+#include "../Imaging/ImageRect.hpp"
 #include "../Vector4.hpp"
 #include "../Vector2.hpp"
+using namespace Sce::PlayStation::Core::Imaging;
 using namespace Sce::PlayStation::Core;
 
 namespace Sce::PlayStation::Core::Graphics {
@@ -19,9 +22,9 @@ namespace Sce::PlayStation::Core::Graphics {
 		ImageRect Viewport;
 		Vector2 DepthRange;
 		Vector4 ClearColor;
-		float ClearDepth;/// <summary>/
+		float ClearDepth;
 		int ClearStencil;
-		CullFace CullFace;
+		sCullFace CullFace;
 		BlendFunc BlendFuncRgb;
 		BlendFunc BlendFuncAlpha;
 		DepthFunc DepthFunc;
