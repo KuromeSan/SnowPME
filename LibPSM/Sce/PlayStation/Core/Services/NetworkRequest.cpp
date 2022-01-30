@@ -1,19 +1,19 @@
 #include "NetworkRequest.hpp"
 
 namespace Sce::PlayStation::Core::Services {
-	int NetworkRequest::CreateRequestNative(int, string, string, int *){
+	int NetworkRequest::CreateRequestNative(int type, string function, string json, int* requestHandle) {
 		cout << "Sce::PlayStation::Core::Services::CreateRequestNative(int, string, string, int *) Unimplemented." << endl;
 		return 0;
 	}
-	int NetworkRequest::QueueRequestNative(int, string, string, int *){
+	int NetworkRequest::QueueRequestNative(int type, string function, string json, int* requestHandle) {
 		cout << "Sce::PlayStation::Core::Services::QueueRequestNative(int, string, string, int *) Unimplemented." << endl;
 		return 0;
 	}
-	int NetworkRequest::DestroyRequestNative(int){
+	int NetworkRequest::DestroyRequestNative(int requestHandle) {
 		cout << "Sce::PlayStation::Core::Services::DestroyRequestNative(int) Unimplemented." << endl;
 		return 0;
 	}
-	int NetworkRequest::GetResponseNative(int, string *){
+	int NetworkRequest::GetResponseNative(int requestHandle, string* response) {
 		cout << "Sce::PlayStation::Core::Services::GetResponseNative(int, string *) Unimplemented." << endl;
 		return 0;
 	}

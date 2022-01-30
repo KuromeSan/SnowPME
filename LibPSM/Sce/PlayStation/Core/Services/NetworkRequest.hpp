@@ -9,10 +9,10 @@ using namespace std;
 namespace Sce::PlayStation::Core::Services {
 	class NetworkRequest {
 	public:
-		static int CreateRequestNative(int, string, string, int *);
-		static int QueueRequestNative(int, string, string, int *);
-		static int DestroyRequestNative(int);
-		static int GetResponseNative(int, string *);
+		static int CreateRequestNative(int type, string function, string json, int *requestHandle);
+		static int QueueRequestNative(int type, string function, string json, int *requestHandle);
+		static int DestroyRequestNative(int requestHandle);
+		static int GetResponseNative(int requestHandle, string *response);
 		static int RegisterThreadNative();
 		static int UnregisterThreadNative();
 	};

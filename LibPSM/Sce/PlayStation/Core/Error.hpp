@@ -9,7 +9,7 @@ using namespace std;
 namespace Sce::PlayStation::Core {
 	class Error {
 	public:
-		static int GetExceptionInfoNative(string *, string *);
+		static int GetExceptionInfoNative(string *message, string *param);
 	};
 }
 #endif
