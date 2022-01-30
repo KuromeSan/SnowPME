@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include <string>
 #include <iostream>
+#include "LocationData.hpp"
+
 using namespace std;
 
 namespace Sce::PlayStation::Core::Device {
@@ -11,7 +13,7 @@ namespace Sce::PlayStation::Core::Device {
 	public:
 		static int StartNative();
 		static int StopNative();
-		static int GetDataNative(Sce::PlayStation::Core::Device::LocationData *);
+		static int GetDataNative(LocationData *locationData);
 		static int GetEnableDevicesNative();
 	};
 }

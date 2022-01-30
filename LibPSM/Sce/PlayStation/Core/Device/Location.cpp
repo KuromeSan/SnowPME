@@ -9,7 +9,7 @@ namespace Sce::PlayStation::Core::Device {
 		cout << "Sce::PlayStation::Core::Device::StopNative() Unimplemented." << endl;
 		return 0;
 	}
-	int Location::GetDataNative(Sce::PlayStation::Core::Device::LocationData *){
+	int Location::GetDataNative(LocationData * locationData){
 		cout << "Sce::PlayStation::Core::Device::GetDataNative(Sce::PlayStation::Core::Device::LocationData *) Unimplemented." << endl;
 		return 0;
 	}
