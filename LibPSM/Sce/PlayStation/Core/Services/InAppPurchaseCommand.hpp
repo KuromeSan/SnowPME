@@ -2,7 +2,7 @@
 #define LIB_PSM_INAPPPURCHSAECOMMAND_H
 
 namespace Sce::PlayStation::Core::Services {
-	enum InAppPurchaseCommand : unsigned int {
+	enum class InAppPurchaseCommand : unsigned int {
 		None = 0,
 		GetProductInfo = 1,
 		GetTicketInfo = 2,

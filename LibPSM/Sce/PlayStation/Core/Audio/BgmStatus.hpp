@@ -2,7 +2,7 @@
 #define LIB_PSM_BGMSTATUS_H
 
 namespace Sce::PlayStation::Core::Audio {
-	enum BgmStatus : unsigned int {
+	enum class BgmStatus : unsigned int {
 		Stopped = 0,
 		Playing = 1,
 		Paused = 2

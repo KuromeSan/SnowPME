@@ -2,7 +2,7 @@
 #define LIB_PSM_SOUNDSTATUS_H
 
 namespace Sce::PlayStation::Core::Audio {
-	enum SoundStatus : unsigned int {
+	enum class SoundStatus : unsigned int {
 		Stopped = 0,
 		Playing = 1
 	};

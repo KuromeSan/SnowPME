@@ -2,7 +2,7 @@
 #define LIB_PSM_LOCATIONDEVICETYPE_H
 
 namespace Sce::PlayStation::Core::Device {
-	enum LocationDeviceType : unsigned int {
+	enum class LocationDeviceType : unsigned int {
 		None = 0x00,
 		Gps = 0x01,
 		Wifi = 0x02,

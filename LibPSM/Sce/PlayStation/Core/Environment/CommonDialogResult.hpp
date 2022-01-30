@@ -2,7 +2,7 @@
 #define LIB_PSM_COMMONDIALOGRESULT_H 1
 
 namespace Sce::PlayStation::Core::Environment {
-	enum CommonDialogResult : unsigned int {
+	enum class CommonDialogResult : unsigned int {
 		OK = 0,
 		Canceled = 1,
 		Aborted = 2,

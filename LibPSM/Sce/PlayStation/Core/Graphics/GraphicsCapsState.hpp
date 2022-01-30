@@ -23,7 +23,7 @@ namespace Sce::PlayStation::Core::Graphics {
 		float MaxAliasedLineWidth;
 		float MinAliasedPointSize;
 		float MaxAliasedPointSize;
-	} DepthFunc;
+	} GraphicsCapsState;
 }
 
 #endif

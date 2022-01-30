@@ -2,7 +2,7 @@
 #define LIB_PSM_TOUCHSTATUS_H
 
 namespace Sce::PlayStation::Core::Input {
-	enum TouchStatus : unsigned int {
+	enum class TouchStatus : unsigned int {
 		None = 0,
 		Down = 1,
 		Up = 2,

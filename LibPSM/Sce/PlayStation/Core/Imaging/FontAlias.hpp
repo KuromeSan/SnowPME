@@ -2,7 +2,7 @@
 #define LIB_PSM_FONTALIAS_H
 
 namespace Sce::PlayStation::Core::Imaging {
-	enum FontAlias : unsigned int {
+	enum class FontAlias : unsigned int {
 		System = 0
 	};
 }

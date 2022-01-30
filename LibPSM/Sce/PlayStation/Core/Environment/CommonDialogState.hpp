@@ -2,7 +2,7 @@
 #define LIB_PSM_COMMONDIALOGSTATE_H
 
 namespace Sce::PlayStation::Core::Environment {
-	enum CommonDialogState : unsigned int {
+	enum class CommonDialogState : unsigned int {
 		None = 0,
 		Running = 1,
 		Finished = 2

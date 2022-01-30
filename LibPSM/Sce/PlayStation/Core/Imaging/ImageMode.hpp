@@ -2,7 +2,7 @@
 #define LIB_PSM_IMAGEMODE_H
 
 namespace Sce::PlayStation::Core::Imaging {
-	enum ImageMode : unsigned int {
+	enum class ImageMode : unsigned int {
 		Rgba = 0, 
 		A = 1
 	};

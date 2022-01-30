@@ -2,7 +2,7 @@
 #define LIB_PSM_GAMEPADBUTTONS_H
 
 namespace Sce::PlayStation::Core::Input {
-	enum GamePadButtons : unsigned int {
+	enum class GamePadButtons : unsigned int {
 		Left = 0x01,
 		Up = 0x02,
 		Right = 0x04,

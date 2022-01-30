@@ -2,7 +2,7 @@
 #define LIB_PSM_CAMERAIMAGEFORMAT_H
 
 namespace Sce::PlayStation::Core::Device {
-	enum CameraImageFormat : unsigned int {
+	enum class CameraImageFormat : unsigned int {
 		Rgb565 = 0,
 		Rgba8888 = 1
 	};
