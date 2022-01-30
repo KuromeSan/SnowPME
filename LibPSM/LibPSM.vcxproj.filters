@@ -297,6 +297,24 @@
     <ClInclude Include="Sce\PlayStation\Core\Environment\TextInputMode.hpp">
       <Filter>Header Files\Sce\PlayStation\Core\Environment</Filter>
     </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\BlendFunc.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\CullFace.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\DepthFunc.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\GraphicsCapsState.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\GraphicsCaps.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sce\PlayStation\Core\Graphics\GraphicsState.hpp">
+      <Filter>Header Files\Sce\PlayStation\Core\Graphics</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sce\PlayStation\Core\Error.cpp">
