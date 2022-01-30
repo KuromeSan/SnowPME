@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string>
 #include <iostream>
+#include "TouchData.hpp"
 using namespace std;
 
 namespace Sce::PlayStation::Core::Input {
