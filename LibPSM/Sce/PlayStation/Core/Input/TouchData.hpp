@@ -12,7 +12,7 @@ namespace Sce::PlayStation::Core::Input {
 		int reserved0;
 		int reserved1;
 		int reserved2;
-	} MotionData;
+	} TouchData;
 }
 
 #endif

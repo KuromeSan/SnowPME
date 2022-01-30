@@ -378,6 +378,9 @@
     <ClInclude Include="Sce\PlayStation\Core\Services\InAppPurchaseProductData.hpp">
       <Filter>Header Files\Sce\PlayStation\Core\Services</Filter>
     </ClInclude>
+    <ClInclude Include="LibPSM.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sce\PlayStation\Core\Error.cpp">

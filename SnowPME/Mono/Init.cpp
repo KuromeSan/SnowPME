@@ -1,6 +1,6 @@
 #include "Init.hpp"
 #include "Security.hpp"
-#include "../LibPSM.hpp"
+#include <LibPSM.hpp>
 #include "../Config.hpp"
 namespace SnowPME::Mono
 {

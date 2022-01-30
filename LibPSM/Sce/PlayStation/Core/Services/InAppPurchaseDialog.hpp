@@ -12,21 +12,21 @@ using namespace Sce::PlayStation::Core::Environment;
 using namespace std;
 
 namespace Sce::PlayStation::Core::Services {
-	typedef struct CommandArguments
-	{
-		InAppPurchaseCommand Command;
-		int* Arguments;
-	} CommandArguments;
-
-	typedef struct CommandResults
-	{
-		InAppPurchaseCommand Command;
-		int InfoStatus;
-		int Count;
-		InAppPurchaseProductData* Results;
-	} CommandResults;
-
 	class InAppPurchaseDialog {
+	private:
+		typedef struct CommandArguments
+		{
+			InAppPurchaseCommand Command;
+			int* Arguments;
+		} CommandArguments;
+
+		typedef struct CommandResults
+		{
+			InAppPurchaseCommand Command;
+			int InfoStatus;
+			int Count;
+			InAppPurchaseProductData* Results;
+		} CommandResults;
 	public:
 		static int NewNative(int type, int *handle);
 		static int ReleaseNative(int type, int handle);

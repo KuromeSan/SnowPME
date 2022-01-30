@@ -44,8 +44,5 @@
     <ClInclude Include="Mono\Security.hpp">
       <Filter>Header Files\Mono</Filter>
     </ClInclude>
-    <ClInclude Include="LibPSM.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

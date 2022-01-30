@@ -11,15 +11,14 @@ using namespace std;
 using namespace Sce::PlayStation::Core::Environment;
 
 namespace Sce::PlayStation::Core::Device {
-	
-	typedef struct DialogArguments { } DialogArguments;
-
-	typedef struct DialogResults
-	{
-		char* Filename;
-	} DialogResults;
-
 	class CameraImportDialog {
+	private:
+		typedef struct DialogArguments { } DialogArguments;
+
+		typedef struct DialogResults
+		{
+			char* Filename;
+		} DialogResults;
 	public:
 		static int NewNative(int type, int *handle);
 		static int ReleaseNative(int type, int handle);
