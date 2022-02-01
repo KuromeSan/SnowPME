@@ -1,6 +1,6 @@
 #include "Init.hpp"
 #include "Security.hpp"
-#include <LibPSM.hpp>
+#include "../LibPSM/LibPSM.hpp"
 #include "../Config.hpp"
 namespace SnowPME::Mono
 {
@@ -10,7 +10,6 @@ namespace SnowPME::Mono
 	*	This function initalizes mono with a given executable path
 	*/
 	int Init::InitMono(string executablePath) {
-		MonoDomain* domain;
 		cout << "C# Assembly Loading [ " << executablePath << " ]" << endl;
 
 		executableFile = executablePath;
@@ -28,22 +27,55 @@ namespace SnowPME::Mono
 		mono_set_dirs(Config::RuntimeLibPath.c_str(), Config::RuntimeConfigPath.c_str());
 
 		// Create a domain in which this application will run under.
-		domain = mono_jit_init_version(executablePath.c_str(), "mobile");
+		MonoDomain* mDomain = mono_jit_init_version(executablePath.c_str(), "mobile");
 
 		// Add all PSM Exclusive functions.
 		Init::addFunctions();
 
-		// Read Sce.PlayStation.Core.dll
-		MonoAssembly* mAssembly = mono_domain_assembly_open(domain, Config::PsmCorelibsPath.c_str());
+		// Load Sce.PlayStation.Core.dll
+		MonoAssembly* psmAssembly = mono_domain_assembly_open(mDomain, Config::PsmCorelibsPath.c_str());
 		
-		// Call SetToConsole
-		MonoImage* mImage = mono_assembly_get_image(mAssembly);
-		MonoClass* mClass = mono_class_from_name(mImage, "Sce.PlayStation.Core.Environment", "Log");
-		MonoMethod* mMethod = mono_class_get_method_from_name(mClass, "SetToConsole", 0);
-		mono_runtime_invoke(mMethod, NULL, NULL, NULL);
+		// Calls SetToConsole. 
+		MonoImage* psmImage = mono_assembly_get_image(psmAssembly);
+		MonoClass* psmClass = mono_class_from_name(psmImage, "Sce.PlayStation.Core.Environment", "Log");
+		MonoMethod* psmMethod = mono_class_get_method_from_name(psmClass, "SetToConsole", 0);
+		mono_runtime_invoke(psmMethod, NULL, NULL, NULL);
 
+		// This is automatically called when a resource limit is reached
+		//mono_runtime_resource_set_callback(Security::ResourceLimitReachedCallback);
 
+		// Set up resource limits for PSM Games... 
+		//mono_runtime_resource_limit(MONO_RESOURCE_JIT_CODE, 0x1000000, 0x1000000);
+		//mono_runtime_resource_limit(MONO_RESOURCE_METADATA, 0x1000000, 0x1000000);
+
+		// TODO: Read this from app.info
+		// 
+		// This might be PSM Mono only ..
+		// 
+		//mono_gc_set_heap_size_limit(0x2000000, 0, 0x2000000, 0);
+		//mono_thread_set_max_threads(16);
+		//mono_threadpool_set_max_threads(8,8);
+		//mono_thread_set_threads_exhausted_callback(mono_gc_out_of_memory);
+
+		// Load main executable (app.exe)
+		MonoAssembly* appAssembly = mono_domain_assembly_open(mDomain, executablePath.c_str());
+		
+		Init::launchProgram(appAssembly, &executableFile[0]);
 		return 0;
+	}
+
+	void Init::launchProgram(MonoAssembly* assembly, char* path) {
+		MonoObject* exec = 0;
+
+		MonoImage* image = mono_assembly_get_image(assembly);
+		uint32_t entryPoint = mono_image_get_entry_point(image);
+		MonoMethod* method = mono_get_method(image, entryPoint, NULL);
+		char** argv = &path;
+		mono_runtime_run_main(method, 1, argv, NULL);
+		
+		if (exec)
+			mono_unhandled_exception(exec);
+
 	}
 
 	void Init::addFunctions() {
