@@ -16,8 +16,8 @@ namespace SnowPME::Mono
 
 		// Lockdown mono if security is enabled
 		if (!Config::SecurityCritical) {
-			mono_security_enable_core_clr();
-			mono_security_set_core_clr_platform_callback(Security::IsSecurityCriticalExempt);
+			//mono_security_enable_core_clr();
+			//mono_security_set_core_clr_platform_callback(Security::IsSecurityCriticalExempt);
 		}
 				
 		// Tell mono there is no config file
@@ -34,7 +34,7 @@ namespace SnowPME::Mono
 
 		// Load Sce.PlayStation.Core.dll
 		MonoAssembly* psmAssembly = mono_domain_assembly_open(mDomain, Config::PsmCorelibsPath.c_str());
-		
+
 		// Calls SetToConsole. 
 		MonoImage* psmImage = mono_assembly_get_image(psmAssembly);
 		MonoClass* psmClass = mono_class_from_name(psmImage, "Sce.PlayStation.Core.Environment", "Log");
@@ -52,6 +52,7 @@ namespace SnowPME::Mono
 		// 
 		// This might be PSM Mono only ..
 		// 
+		
 		//mono_gc_set_heap_size_limit(0x2000000, 0, 0x2000000, 0);
 		//mono_thread_set_max_threads(16);
 		//mono_threadpool_set_max_threads(8,8);
